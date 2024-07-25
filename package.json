@@ -1,0 +1,25 @@
+{
+  "name": "starlight-pwa",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build && npm run pagefind-fix",
+    "preview": "astro preview",
+    "astro": "astro",
+    "pagefind-fix": "sed -i 's/?ts=${Date.now()}//g' dist/pagefind/pagefind.js",
+    "generate-pwa-assets": "npx @vite-pwa/assets-generator --preset minimal public/favicon.svg"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.8.2",
+    "@astrojs/starlight": "^0.25.2",
+    "astro": "^4.10.2",
+    "sharp": "^0.32.5",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@vite-pwa/astro": "^0.4.0",
+    "workbox-window": "^7.1.0"
+  }
+}
