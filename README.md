@@ -10,6 +10,8 @@ npm create astro@latest -- --template starlight-pwa
 
 # Features 
 
+1. Works Fully Offline and updates itself when the user is connected to the network
+
 1. can be installed as a pwa on any device
    
 1. pagefind search that can work offline
