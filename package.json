@@ -12,9 +12,9 @@
     "generate-pwa-assets": "npx @vite-pwa/assets-generator --preset minimal public/favicon.svg"
   },
   "dependencies": {
-    "@astrojs/check": "^0.8.2",
-    "@astrojs/starlight": "^0.25.2",
-    "astro": "^4.10.2",
+    "@astrojs/check": "^0.9.2",
+    "@astrojs/starlight": "^0.26.1",
+    "astro": "^4.14.2",
     "sharp": "^0.32.5",
     "typescript": "^5.5.4"
   },
